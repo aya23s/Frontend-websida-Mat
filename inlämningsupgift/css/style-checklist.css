@@ -1,0 +1,44 @@
+.checklist{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    background: linear-gradient(to bottom, #6f3636, rgb(51, 35, 35));
+    padding: 20px;
+    justify-content: center;
+    margin: 20px auto 25px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+h3 {
+color: white;
+}
+
+@media (max-width: 600px) {
+    .checklist {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+.ingrediants {
+    list-style: none;
+    padding: 0;
+}
+.ingrediants li {
+    margin: 10px 0;
+    color: white;
+}
+
+.ingrediants input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ingrediants input:checked + span {
+    text-decoration: line-through;
+}
